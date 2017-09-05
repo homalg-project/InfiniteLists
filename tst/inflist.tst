@@ -32,7 +32,7 @@ gap> L[ 1 ]; L[ 2 ]; L[ 3 ]; L[ 4 ]; L[ 5 ]; L[ 6 ];
 3
 1
 2
-gap> L;
+gap> Display( L );
 8[ ( 3, 1, 2 )* ]
 gap> IsRepeatingNList( Implementation( L ) );
 true
