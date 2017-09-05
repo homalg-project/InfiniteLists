@@ -1,0 +1,1 @@
+ReadPackage( "InfiniteLists", "lib/inflist.gd" );
