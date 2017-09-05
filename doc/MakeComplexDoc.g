@@ -9,7 +9,7 @@ MakeGAPDocDoc( ".",     # path to the directory containing the main file
                           # to path which contain pieces of documentation 
                           # which must be included in the document
                [ "../PackageInfo.g" ], 
-               "Complex",  # the name of the book used by GAP's online help
+               "Infinite Lists",  # the name of the book used by GAP's online help
                "MathJax"
                );
 
@@ -26,4 +26,4 @@ CopyHTMLStyleFiles( "." );
 
 # Create the manual.lab file which is needed if the main manuals or another 
 # package is referring to your package
-GAPDocManualLab( "Complex" );;
+GAPDocManualLab( "InfiniteLists" );;

@@ -3,7 +3,7 @@
 <!-- Reading PKGVERSIONDATA chunk from the PackageInfo.g file -->
 
 <!DOCTYPE Book SYSTEM "gapdoc.dtd"
-   [ <!ENTITY Complex "<Package>Complex</Package>">
+   [ <!ENTITY Complex "<Package>InfiniteLists</Package>">
      <#Include Label="PKGVERSIONDATA">
    ]>
 
@@ -16,11 +16,11 @@
 
 <!-- Documentation of the Example package. -->
 
-<Book Name="Complex"> 
+<Book Name="InfiniteLists"> 
 
 <TitlePage>
   <Title>&Complex;</Title>
-  <Subtitle>A &GAP; package for chain complexes.</Subtitle>
+  <Subtitle>A &GAP; package for infinite lists.</Subtitle>
   <Version>Version &VERSION;</Version>
   <Date>&RELEASEDATE;</Date>
   <Author> Kristin Krogh Arnesen
@@ -50,19 +50,7 @@
 
 <#Include SYSTEM "intro.xml">
 
-<#Include SYSTEM "chapter_quickstart.xml">
-
-<#Include SYSTEM "chapter_abeliancategories.xml">
-
 <#Include SYSTEM "chapter_inflist.xml">
-
-<#Include SYSTEM "chapter_complex.xml">
-
-<#Include SYSTEM "chapter_truncations.xml">
-
-<#Include SYSTEM "chapter_operations.xml">
-
-<#Include SYSTEM "chapter_repeating.xml">
 
 </Body>
 
