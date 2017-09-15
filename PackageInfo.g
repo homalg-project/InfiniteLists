@@ -20,7 +20,7 @@ Date := Concatenation( ~.Date{[ 9, 10 ]}, "/", ~.Date{[ 6, 7 ]}, "/", ~.Date{[ 1
 ##  <!ENTITY VERSION "0.1-dev">
 ##  <!ENTITY RELEASEDATE "24 December 2013">
 ##  <#/GAPDoc>
-PackageWWWHome :="https://bitbucket.org/karnesen/complex",
+PackageWWWHome :="",
 #ArchiveURL := Concatenation( ~.PackageWWWHome, "example-", ~.Version ),
 ArchiveFormats := ".tar.gz",
 Persons := [
