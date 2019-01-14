@@ -25,6 +25,18 @@ InstallMethod( MapLazy,
   return MapLazy( CombineZLazy( l ), f, n );
 end );
 
+InstallMethod( PositivePartFrom, [ IsMapZList, IsInt ],
+function( L, i )
+  return Map( PositivePartFrom( BaseList( L ), i ),
+              MapFunction( L ) );
+end );
+
+InstallMethod( NegativePartFrom, [ IsMapZList, IsInt ],
+function( L, i )
+  return Map( NegativePartFrom( BaseList( L ), i ),
+              MapFunction( L ) );
+end );
+
 # Lazy combination of z lists
 
 InstallMethod( CombineZLazy,
@@ -64,6 +76,16 @@ InstallMethod( Reflection,
                       rec( ),
                       [ BaseList, l,
                         Reflection, l ] );
+end );
+
+InstallMethod( PositivePartFrom, [ IsReflectedZList, IsInt ],
+function( L, i )
+  return NegativePartFrom( BaseList( L ), -i );
+end );
+
+InstallMethod( NegativePartFrom, [ IsReflectedZList, IsInt ],
+function( L, i )
+  return PositivePartFrom( BaseList( L ), -i );
 end );
 
 # Compute the entry in index n
