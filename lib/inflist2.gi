@@ -45,6 +45,16 @@ InstallMethod( ShiftLazyOp, [ IsZList, IsInt ],
                         ShiftIndex, i ] );
 end );
 
+InstallMethod( PositivePartFrom, [ IsShiftedZList, IsInt ],
+function( L, i )
+  return PositivePartFrom( BaseList( L ), i + ShiftIndex( L ) );
+end );
+
+InstallMethod( NegativePartFrom, [ IsShiftedZList, IsInt ],
+function( L, i )
+  return NegativePartFrom( BaseList( L ), i + ShiftIndex( L ) );
+end );
+
 # Reflection of z list
 
 InstallMethod( Reflection,
