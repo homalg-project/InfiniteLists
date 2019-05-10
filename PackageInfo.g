@@ -20,8 +20,8 @@ Date := Concatenation( ~.Date{[ 9, 10 ]}, "/", ~.Date{[ 6, 7 ]}, "/", ~.Date{[ 1
 ##  <!ENTITY VERSION "0.1-dev">
 ##  <!ENTITY RELEASEDATE "24 December 2013">
 ##  <#/GAPDoc>
-PackageWWWHome :="",
-#ArchiveURL := Concatenation( ~.PackageWWWHome, "example-", ~.Version ),
+PackageWWWHome :="https://github.com/homalg-project/InfiniteLists",
+ArchiveURL := Concatenation( ~.PackageWWWHome, "InfiniteLists-", ~.Version ),
 ArchiveFormats := ".tar.gz",
 Persons := [
   rec( 
